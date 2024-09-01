@@ -1,13 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --main-font: "Outfit";
+  --heading-font: "Young Serif";
+  --rose-color: hsl(332, 51%, 32%);
+  --brown-color: hsl(14, 45%, 36%);
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
-  display: flex;
-  justify-content: center;
   height: 100vh;
-  align-items: center;
-  margin: 0;
   background-color: #f9f9f9;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero {
+  min-width: 375px;
+  margin: 1rem 2rem;
+}
+
+#hero h1 {
+  text-align: start;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+#hero p {
+  font-family: var(--main-font);
+  font-size: 1rem;
+}
+
+.prep-time h3 {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: var(--rose-color);
+}
+.prep-time ul {
+  margin: 1rem 2rem;
+}
+
+.prep-time ul li {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+#section {
+  margin: 1rem 2rem;
+}
+
+#section h2 {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  color: var(--brown-color);
+}
+
+.section-list ul,
+.section-list ol {
+  margin: 1rem 2rem;
+}
+
+.section-list ul li,
+.section-list ol li {
+  font-family: var(--main-font);
+
+  margin-bottom: 0.5rem;
+}
+
+.hr {
+  border: none;
+  height: 1px;
+  width: 94vw;
+  background-color: #22222257;
+  margin: 1rem 3vw;
+}
+
+.instruction-list ol li::marker {
+  color: var(--brown-color);
+  font-weight: bold;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+tr {
+  border-bottom: 1px solid #22222257;
 }
